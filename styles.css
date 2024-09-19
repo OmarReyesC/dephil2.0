@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-10: #F5CFC1;
+    --primary-100: #F25018;
+    --secondary-10: #C1D3F5;
+    --secondary-100: #2159C2;
+    --neutral-100: #F2F7FF;
+    --neutral-75: #ACB3BF;
+    --neutral-50: #737780;
+    --neutral-25: #393C40;
+    --neutral-10: #202226;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Jost", sans-serif;
+}
+.font-label-medium {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.025rem;
+}
+.font-body-medium {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 0;
+}
+
+/* Navbar styles */
+.navbar{
+    width: 100%;
+    height: 8rem;
+}
+.navbar__start {
+    display: flex;
+    align-items: center;
+}
+.navbar__start img {
+    width: 21.4rem;
+    height: 4rem;
+}
