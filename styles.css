@@ -18,15 +18,15 @@ html {
     font-size: 62.5%;
     font-family: "Jost", sans-serif;
 }
+
+/* Typography styles */
 .font-label-medium {
-    font-family: "Jost", sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.4rem;
     letter-spacing: -0.025rem;
 }
 .font-body-medium {
-    font-family: "Jost", sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
@@ -35,14 +35,78 @@ html {
 
 /* Navbar styles */
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    min-width: 1240px;
     height: 8rem;
+    padding: 0 3.2rem;
+    border: 0 0 .1rem 0 solid var(--neutral-75);
 }
 .navbar__start {
     display: flex;
+    gap: 1.6rem;
     align-items: center;
 }
 .navbar__start img {
     width: 21.4rem;
     height: 4rem;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    height: 4rem;
+    width: 20rem;
+    padding: 0 1.2rem;
+    border: .1rem solid var(--neutral-75);
+    border-radius: 10rem;   
+}
+.search-bar .icon-search path {
+    fill: var(--neutral-10);
+}
+.search-bar .search-input{
+    width: 100%;
+    border: none;
+}
+
+.navbar__end {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+.navbar__end .primary-button{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    height: 4rem;
+    border-radius: 10rem;
+    border: none;
+    padding: 0 1.6rem;
+    color: var(--neutral-100);
+    background-color: var(--primary-100);
+}
+.navbar__end .icon-upload-file path{
+    fill: var(--neutral-100);
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: .4rem 1.2rem;
+    border-radius: 10rem;
+    text-decoration: none;
+}
+.profile-menu .profile-pic-round-holder{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;
+    background-color: var(--primary-10);
+}
+.profile-menu .profile-pic-round-holder .profile-pic{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;  /*NOT CONVINCED ABOUT THIS WHOLE DEAL */
 }
